@@ -1,7 +1,4 @@
 const Listing = require('../models/listing.js');
-const mbxGeocoding = require('@mapbox/mapbox-sdk/services/geocoding');
-const mapToken = process.env.MAP_TOKEN;
-const geocodingClient = mbxGeocoding({ accessToken: mapToken });
 
 
 module.exports.index = async (req, res) => {
@@ -23,7 +20,7 @@ module.exports.showListing = async (req, res) => {
         req.flash('error', "Listing you are requested for doesnot exist!!");
         res.redirect(`/listings`);
     }
-    console.log(listing.geometry.coordinates);
+   
     res.render("./listing/show.ejs", { listing });
 }
 
@@ -32,14 +29,6 @@ module.exports.createListing = async (req, res) => {
     //     throw new ExpressError(400, "Send valid data for listing")
     // }
     //req.file will have info about uploded files
-
-    //Geocoding
-    let response = await geocodingClient
-        .forwardGeocode({
-            query: req.body.listing.location,
-            limit: 1
-        })
-        .send();
 
 
     let url = req.file.path;
