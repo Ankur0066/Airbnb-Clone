@@ -13,7 +13,7 @@ mongosh --version
 ```
 2.npm 
 ```
-
+npm install -g npm
 ```
 3.express 
 ```
