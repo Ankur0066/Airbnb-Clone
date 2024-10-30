@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # Project Demo
 
 
@@ -204,4 +204,4 @@ Don't just put this url. Your url will be different. You will find it in your mo
 9. After all the setup you finished create the web service and It will deploy the project.
 
 You can deploy frontend into vercel or netlify also. Thanks
->>>>>>> 777db6b1bb1ef22660968d5968c122b921327a4a
+
