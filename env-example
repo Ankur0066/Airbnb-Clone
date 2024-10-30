@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 NODE_ENV = 
 ATLASDB_URL = 
 SECRET = 
@@ -8,4 +9,16 @@ CLOUD_API_KEY =
 CLOUD_API_SECRET =
 
 //Map token Api to intergrate map features
+=======
+NODE_ENV = 
+ATLASDB_URL = 
+SECRET = 
+
+//Database setting 
+CLOUD_NAME =
+CLOUD_API_KEY =
+CLOUD_API_SECRET =
+
+//Map token Api to intergrate map features
+>>>>>>> 777db6b1bb1ef22660968d5968c122b921327a4a
 MAP_TOKEN = 
